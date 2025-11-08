@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn With Smile — English & Personality Development | Kolkata (Offline) & Pan-India Online</title>
+  <meta name="description" content="Kolkata-based spoken English & personality development solving India-specific problems: interviews, meetings, accent clarity, email/SOPs, IELTS, and Business English. Offline in Kolkata, online Pan-India." />
+  <meta property="og:title" content="Learn With Smile — Confident English for Work & Life" />
+  <meta property="og:description" content="Fix interview fear, meeting nerves, grammar gaps, and accent clarity. Plus IELTS & Business English (B2–C1). Offline Kolkata • Online Pan-India." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517530094915-500495b15ade?q=80&w=1200&auto=format&fit=crop" />
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Vibrant Red / Blue / Yellow / Green palette */
+      --bg:#ffffff;            /* white */
+      --butter:#fbbf24;        /* yellow */
+      --butter-2:#fde68a;      /* pale yellow */
+      --teal:#2563eb;          /* blue (primary) */
+      --orange:#ef4444;        /* red */
+      --green:#22c55e;         /* green */
+      --ink:#0f172a;           /* heading/body ink */
+      --muted:#5b6478;         /* muted text */
+      --ring:0 0 0 3px rgba(37,99,235,.25);
+      --radius:16px;
+      --maxw:1200px;
+      --shadow-sm:0 6px 16px rgba(15,23,42,.08);
+      --shadow-lg:0 24px 60px rgba(15,23,42,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    img{max-width:100%;height:auto;border-radius:14px}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxw);margin-inline:auto;padding-inline:24px}
+    .kicker{font-weight:800;color:#475569;letter-spacing:.22em;text-transform:uppercase;font-size:.8rem}
+    .headline{font-family:"Poppins","Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.08;letter-spacing:.2px;font-size:clamp(2rem,3.2vw + 1.1rem,3.6rem)}
+    .subhead{font-size:clamp(1rem,.8vw + .95rem,1.2rem);color:var(--muted)}
+    .pill{display:inline-flex;align-items:center;gap:.45rem;padding:.35rem .7rem;border-radius:999px;border:1px dashed rgba(15,23,42,.16);background:#fff;font-weight:600}
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;gap:.65rem;padding:.95rem 1.2rem;border-radius:12px;font-weight:800;letter-spacing:.2px;border:0;box-shadow:var(--shadow-sm);cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,opacity .15s ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-lg)}
+    .btn--primary{background:linear-gradient(135deg,var(--teal),#1d4ed8);color:#fff}
+    .btn--secondary{background:linear-gradient(135deg,var(--butter),#fde047);color:#111827}
+    .btn--ghost{background:#fff;border:1px solid rgba(15,23,42,.12);color:#0f172a}
+    .btn--call{background:linear-gradient(135deg,var(--green),#16a34a);color:#052e16}
+
+    /* Nav */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,23,42,.08)}
+    .nav__bar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+    .brand{display:flex;align-items:center;gap:.75rem;font-weight:900}
+    .brand__logo{width:38px;height:38px;border-radius:12px;background:
+      radial-gradient(100% 100% at 20% 20%,var(--butter) 0 40%,transparent 41%),
+      radial-gradient(130% 130% at 80% 80%,var(--orange) 0 40%,transparent 41%),
+      linear-gradient(135deg,var(--teal),var(--green));box-shadow:inset 0 0 0 2px rgba(255,255,255,.5),0 4px 12px rgba(14,165,166,.35)}
+    .nav__links{display:flex;gap:22px;align-items:center}
+    .nav__toggle{display:none}
+    @media (max-width:900px){.nav__links{display:none}.nav__toggle{display:block}.nav.open .nav__links{display:flex;position:fixed;inset:64px 16px auto 16px;flex-direction:column;gap:10px;padding:14px;background:#ffffff;border:1px solid rgba(15,23,42,.1);border-radius:14px;box-shadow:var(--shadow-lg)}}
+
+    /* Sections */
+    .section{padding:84px 0}
+    .hero{padding:110px 0 50px;position:relative}
+    .hero::before{content:"";position:absolute;inset:-120px -40px auto auto;height:320px;width:520px;z-index:-1;background:
+      radial-gradient(260px 260px at 78% 25%,rgba(255,210,141,.55),transparent 60%),
+      radial-gradient(240px 240px at 35% 65%,rgba(14,165,166,.25),transparent 60%);filter:blur(8px)}
+    .grid{display:grid;gap:22px}
+    .grid--2{grid-template-columns:1fr 1fr}
+    .grid--3{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:1000px){.grid--2,.grid--3{grid-template-columns:1fr}}
+
+    /* Cards */
+    .card{background:#ffffff;border:1px solid rgba(15,23,42,.08);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+    .card__pad{padding:22px}
+
+    /* Accent band */
+    .band{border-radius:18px;overflow:hidden;border:1px solid rgba(15,23,42,.08);box-shadow:var(--shadow-lg);background:
+      radial-gradient(650px 250px at 10% -20%,rgba(255,210,141,.45),transparent 60%),
+      radial-gradient(450px 250px at 100% 0%,rgba(14,165,166,.25),transparent 60%),
+      linear-gradient(180deg,#fff,#fff)}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;padding:.45rem .7rem;border-radius:999px;background:linear-gradient(135deg,var(--butter-2),#fff);border:1px solid rgba(15,23,42,.12);font-weight:700;color:#92400e}
+
+    .tick{display:flex;gap:.65rem;align-items:flex-start}
+    .tick svg{margin-top:.2rem}
+
+    /* Form */
+    form{display:grid;gap:14px}
+    label{font-weight:700;font-size:.95rem}
+    input,textarea{width:100%;padding:14px;border-radius:12px;background:#fff;color:var(--ink);border:1px solid rgba(15,23,42,.15);outline:none;font:inherit}
+    input:focus,textarea:focus{box-shadow:var(--ring);border-color:rgba(14,165,166,.6)}
+
+    /* Reveal */
+    .reveal{opacity:0;transform:translateY(12px);transition:all .6s cubic-bezier(.2,.6,.2,1)}
+    .reveal.show{opacity:1;transform:none}
+
+    .footer{border-top:1px solid rgba(15,23,42,.08);padding:28px 0 80px;color:#475569;font-size:.95rem}
+
+    /* Sticky Call Bar */
+    .callbar{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;background:#fff;border:1px solid rgba(15,23,42,.12);border-radius:14px;box-shadow:0 16px 40px rgba(0,0,0,.12);display:flex;gap:10px;justify-content:center;align-items:center;padding:10px}
+    .callbar__text{font-weight:800;color:#0f172a}
+    .hide-on-mobile{display:block}
+    @media (max-width:680px){.hide-on-mobile{display:none}}
+
+    /* Floating WhatsApp */
+    .wa-float{position:fixed;right:18px;bottom:86px;z-index:70}
+    .wa-float a{display:inline-flex;align-items:center;gap:.6rem;background:#25D366;color:#052e16;padding:.85rem 1rem;border-radius:999px;font-weight:900;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="container nav__bar">
+      <a class="brand" href="#top" aria-label="Learn With Smile home">
+        <span class="brand__logo" aria-hidden="true"></span>
+        <span>LEARN WITH SMILE</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#problems">Problems We Solve</a>
+        <a href="#programs">Programs</a>
+        <a href="#results">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="pill">Book Now</a>
+      </nav>
+      <button class="nav__toggle btn btn--ghost" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('open')">Menu</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="grid grid--2">
+        <div class="reveal">
+          <span class="badge">Based in Kolkata • Online Pan-India</span>
+          <h1 class="headline" style="margin:.6rem 0 1rem">
+            English that <span style="background:linear-gradient(180deg,transparent 60%, rgba(255,210,141,.95) 0)">gets you hired</span>, heard, and respected.
+          </h1>
+          <p class="subhead">From Park Street meetings to campus interviews in Pune — we fix interview fear, meeting nerves, grammar gaps, and accent clarity.</p>
+
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+            <a class="btn btn--primary" href="#contact">WhatsApp Us Now</a>
+            <a class="btn btn--ghost" href="#problems">See how we help</a>
+            <a class="btn btn--call" href="tel:+918981672404">Call 89816 72404</a>
+          </div>
+
+          <div class="band" style="margin-top:22px">
+            <div class="card__pad">
+              <div class="grid grid--3">
+                <div><strong style="font-size:1.5rem;color:var(--teal)">98%</strong><div class="subhead" style="font-size:1rem">recommend us</div></div>
+                <div><strong style="font-size:1.5rem;color:var(--orange)">1,000+</strong><div class="subhead" style="font-size:1rem">lessons delivered</div></div>
+                <div><strong style="font-size:1.5rem;color:#334155">7–21 days</strong><div class="subhead" style="font-size:1rem">to visible change</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="card">
+            <img src="https://github.com/soumyakantabera/fantastic-carnival/blob/main/WhatsApp%20Image%202025-09-17%20at%2013.31.42_f2d8aaad.jpg?raw=true" alt="Learner in formal attire outside a campus building" style="aspect-ratio:16/10;width:100%;object-fit:cover;object-position:center 20%">
+          </div>
+          <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap">
+            <span class="pill">Interviews</span>
+            <span class="pill">Meetings</span>
+            <span class="pill">Emails</span>
+            <span class="pill">Presentations</span>
+            <span class="pill">Group Discussion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMS (Kolkata & India) -->
+  <section class="section" id="problems">
+    <div class="container reveal">
+      <div class="kicker">What holds people back</div>
+      <h2 style="margin:.4rem 0 1rem">Real problems we see in Kolkata & across India</h2>
+      <p class="subhead">We use a simple <strong>Problem → Agitate → Solve</strong> framework to create fast wins.</p>
+
+      <div class="grid grid--3" style="margin-top:18px">
+        <div class="card"><div class="card__pad">
+          <div class="tick">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <h3 style="margin:.2rem 0">Interview Fear</h3>
+              <p class="subhead" style="font-size:1rem">Problem: answers in your head, not out loud.<br>Agitate: lost offers, low confidence.<br><strong>We solve</strong>: story bank + HR/tech mock rounds + feedback scorecards.</p>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="card"><div class="card__pad">
+          <div class="tick">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="var(--teal)" stroke-width="2"/></svg>
+            <div>
+              <h3 style="margin:.2rem 0">Meeting Nerves</h3>
+              <p class="subhead" style="font-size:1rem">Problem: you stay quiet in team calls.<br>Agitate: missed credit, slow growth.<br><strong>We solve</strong>: 1‑minute update scripts + objection handling + role-plays.</p>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="card"><div class="card__pad">
+          <div class="tick">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="var(--teal)" stroke-width="2"/></svg>
+            <div>
+              <h3 style="margin:.2rem 0">Accent & Clarity</h3>
+              <p class="subhead" style="font-size:1rem">Problem: mother‑tongue influence (Bengali/Hindi) hurts clarity.<br>Agitate: clients ask to repeat.<br><strong>We solve</strong>: 20‑sound drill pack + pacing + articulation practice.</p>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="card"><div class="card__pad">
+          <div class="tick">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="var(--teal)" stroke-width="2"/></svg>
+            <div>
+              <h3 style="margin:.2rem 0">Grammar Gaps</h3>
+              <p class="subhead" style="font-size:1rem">Problem: prepositions, articles, tenses.<br>Agitate: emails sound unsure.<br><strong>We solve</strong>: the 20% rules that create 80% impact.</p>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="card"><div class="card__pad">
+          <div class="tick">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="var(--teal)" stroke-width="2"/></svg>
+            <div>
+              <h3 style="margin:.2rem 0">Email & SOP Writing</h3>
+              <p class="subhead" style="font-size:1rem">Problem: struggle with structure and tone.<br>Agitate: delays, visa/SOP reworks.<br><strong>We solve</strong>: templates + rewrites + reviewer checklists.</p>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="card"><div class="card__pad">
+          <div class="tick">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="var(--teal)" stroke-width="2"/></svg>
+            <div>
+              <h3 style="margin:.2rem 0">Time‑Poor Schedules</h3>
+              <p class="subhead" style="font-size:1rem">Problem: office, commute, family.<br>Agitate: no time to practice.<br><strong>We solve</strong>: 45‑minute power sessions + WhatsApp micro‑tasks.</p>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="reveal" style="margin-top:18px;text-align:center">
+        <a class="btn btn--primary" href="#contact">Fix your top problem this week →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="section" id="programs">
+    <div class="container">
+      <div class="reveal">
+        <div class="kicker">Programs</div>
+        <h2 style="margin:.4rem 0 1.2rem">Choose your path — tailored to your goals</h2>
+      </div>
+
+      <div class="grid grid--2 reveal">
+        <div class="card"><div class="card__pad">
+          <h3 style="margin-top:0">Spoken English + Grammar</h3>
+          <p class="subhead" style="font-size:1rem">Foundations to fluent: reading, speaking, listening with smart drills and real‑world tasks.</p>
+          <ul class="subhead" style="font-size:1rem;padding-left:1.2rem">
+            <li>Tenses, prepositions, articles, pronunciation</li>
+            <li>Micro‑presentations & storytelling</li>
+            <li>Weekly progress review</li>
+          </ul>
+          <a class="btn btn--secondary" href="#contact">Ask about this track</a>
+        </div></div>
+
+        <div class="card"><div class="card__pad">
+          <h3 style="margin-top:0">Career Accelerator</h3>
+          <p class="subhead" style="font-size:1rem">Interview, resume, and meeting mastery for professionals & job‑seekers.</p>
+          <ul class="subhead" style="font-size:1rem;padding-left:1.2rem">
+            <li>ATS‑ready resume & elevator pitch</li>
+            <li>Mock interviews (HR + technical) with scorecards</li>
+            <li>Email & meeting scripts for daily work</li>
+          </ul>
+          <a class="btn btn--secondary" href="#contact">Book a strategy call</a>
+        </div></div>
+      </div>
+
+      <div class="band reveal" style="margin-top:22px">
+        <div class="card__pad">
+          <div class="grid grid--3">
+            <div><strong style="font-size:1.6rem;color:var(--teal)">15+</strong><div class="subhead" style="font-size:1rem">years in English study</div></div>
+            <div><strong style="font-size:1.6rem;color:var(--orange)">1:1</strong><div class="subhead" style="font-size:1rem">attention — zero rush</div></div>
+            <div><strong style="font-size:1.6rem;color:#334155">Offline & Online</strong><div class="subhead" style="font-size:1rem">Kolkata • Pan‑India</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS / TESTIMONIALS -->
+  <section class="section" id="results">
+    <div class="container reveal">
+      <div class="kicker">Proof</div>
+      <h2 style="margin:.4rem 0 1rem">Wins our learners are proud of</h2>
+      <div class="grid grid--3" style="margin-top:18px">
+        <div class="card"><div class="card__pad">
+          <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?q=80&w=1200&auto=format&fit=crop" alt="Young professional smiling">
+          <p style="margin:.8rem 0 0"><strong>Ria • Analyst (Kolkata)</strong></p>
+          <p class="subhead" style="font-size:1rem">“Two offers in 3 weeks. The mock rounds felt like the real thing.”</p>
+        </div></div>
+        <div class="card"><div class="card__pad">
+          <img src="https://images.unsplash.com/photo-1546527868-ccb7ee7dfa6a?q=80&w=1200&auto=format&fit=crop" alt="Manager presenting confidently">
+          <p style="margin:.8rem 0 0"><strong>Arjun • Manager (Bengaluru)</strong></p>
+          <p class="subhead" style="font-size:1rem">“Weekly scripts made my meetings crisp. Clients now say ‘clear and to the point’.”</p>
+        </div></div>
+        <div class="card"><div class="card__pad">
+          <img src="https://images.unsplash.com/photo-1548345680-f5475ea5df84?q=80&w=1200&auto=format&fit=crop" alt="Student studying abroad">
+          <p style="margin:.8rem 0 0"><strong>Meera • Student (Pune)</strong></p>
+          <p class="subhead" style="font-size:1rem">“Grammar shortcuts + speaking drills = real confidence on campus.”</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING (monthly plans variant) -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="reveal">
+        <div class="kicker">Simple Pricing</div>
+        <h2 style="margin:.4rem 0 .4rem">Start now — upgrade anytime</h2>
+        <p class="subhead" style="margin:0 0 1rem">Transparent monthly plans. Commit 3–6 months for best results — continue with practice tasks after.</p>
+      </div>
+
+      <div class="grid grid--2 reveal">
+        <div class="card price" style="border:2px solid var(--butter)"><div class="card__pad">
+          <h3 style="margin-top:0">Spoken English or Career Accelerator</h3>
+          <p class="subhead" style="font-size:1rem">3–6 month curriculum + ongoing practice work</p>
+          <h4 style="margin:.3rem 0 1rem;color:#1f2937"><span style="font-size:2rem">₹</span><span style="font-size:2rem;font-weight:900">1,000</span> <span class="subhead" style="font-size:1rem">/ month</span></h4>
+          <ul class="subhead" style="font-size:1rem;padding-left:1.2rem">
+            <li>Weekly speaking & email drills</li>
+            <li>Mock interviews & feedback (as needed)</li>
+            <li>WhatsApp micro‑tasks for practice</li>
+          </ul>
+          <a class="btn btn--primary" href="#contact">Start this plan</a>
+        </div></div>
+
+        <div class="card price" style="border:2px solid rgba(37,99,235,.25)"><div class="card__pad">
+          <h3 style="margin-top:0">IELTS Prep or Business English (B2–C1)</h3>
+          <p class="subhead" style="font-size:1rem">3–6 month curriculum + ongoing practice work</p>
+          <h4 style="margin:.3rem 0 1rem;color:#1f2937"><span style="font-size:2rem">₹</span><span style="font-size:2rem;font-weight:900">1,500</span> <span class="subhead" style="font-size:1rem">/ month</span></h4>
+          <ul class="subhead" style="font-size:1rem;padding-left:1.2rem">
+            <li>IELTS timing drills & writing reviews</li>
+            <li>Business updates, negotiation, presentations</li>
+            <li>Personalized feedback every week</li>
+          </ul>
+          <a class="btn btn--primary" href="#contact">Start this plan</a>
+        </div></div>
+      </div>
+      <p class="subhead" style="margin-top:10px">Cancel anytime • Scholarships available for students</p>
+    </div>
+  </section>
+
+  <!-- CONTACT (WhatsApp Send API + Address + Map) -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="grid grid--2">
+        <!-- WhatsApp contact form -->
+        <div class="card reveal"><div class="card__pad">
+          <div class="kicker">Contact</div>
+          <h2 style="margin:.4rem 0 1rem">Send us a WhatsApp</h2>
+          <form id="contactForm">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div>
+              <label for="tel">Your Phone (optional)</label>
+              <input id="tel" name="telephone" type="tel" placeholder="+91 9XXXXXXXXX" />
+            </div>
+            <div>
+              <label for="message">What do you want to improve?</label>
+              <textarea id="message" name="message" rows="4" placeholder="Interviews? Meetings? Grammar? IELTS/SOP?" required></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit">Send via WhatsApp</button>
+            <a class="btn btn--call" href="tel:+918981672404">Or Call 89816 72404</a>
+            <p id="formNote" class="subhead" style="margin-top:8px"></p>
+          </form>
+        </div></div>
+
+        <!-- Address + Map -->
+        <div class="card reveal"><div class="card__pad">
+          <h3 style="margin-top:0">Where to find us</h3>
+          <p class="subhead" style="font-size:1rem"><strong>Address</strong><br>75/2/4, Raja Ram Mohan Roy Road,<br>Kolkata — 700008</p>
+          <p class="subhead" style="font-size:1rem"><strong>Phone:</strong> <a href="tel:+918981672404">8981672404</a></p>
+          <p class="subhead" style="font-size:1rem"><strong>Email:</strong> <a href="mailto:learnwithsmile@proton.me">learnwithsmile@proton.me</a></p>
+
+          <div style="margin-top:12px;border-radius:14px;overflow:hidden;border:1px solid rgba(15,23,42,.08)">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7372.783206356567!2d88.327187!3d22.489486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027b0735dcc47b%3A0xd553415802b5698e!2sLEARN%20WITH%20SMILE!5e0!3m2!1sen!2sit!4v1757682194625!5m2!1sen!2sit" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="band" style="margin-top:12px"><div class="card__pad">
+            <div class="kicker">Open Hours</div>
+            <p style="margin:.4rem 0 0"><strong>Mon–Fri:</strong> 9:00 AM – 7:00 PM</p>
+            <p style="margin:.2rem 0 0"><strong>Sat:</strong> 10:30 AM – 8:00 PM • <strong>Sun:</strong> 12:00 PM – 8:00 PM</p>
+            <p class="subhead" style="font-size:.95rem">*Holiday hours may vary</p>
+          </div></div>
+        </div></div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="reveal" style="text-align:center;margin-top:22px">
+        <a class="btn btn--secondary" href="#top">Back to Top</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <strong>LEARN WITH SMILE</strong><br>
+        <span>© 2020–<script>document.write(new Date().getFullYear())</script> Learn With Smile. All rights reserved.</span>
+      </div>
+      <div style="color:#111827;font-weight:700">Made in Kolkata • Online Pan‑India</div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <div class="wa-float"><a href="https://api.whatsapp.com/send?phone=918981672404&text=Hello%20Learn%20With%20Smile%20%E2%9C%8B%20I%27d%20like%20to%20improve%20my%20English." target="_blank" rel="noopener">WhatsApp Us</a></div>
+
+  <!-- Sticky Call Bar -->
+  <div class="callbar">
+    <span class="callbar__text hide-on-mobile">Free 10‑minute consultation this week · Limited slots</span>
+    <a class="btn btn--call" href="tel:+918981672404">Call 89816 72404</a>
+    <a class="btn btn--primary" href="#contact">Message on WhatsApp</a>
+  </div>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Learn With Smile","description":"Spoken English, IELTS & Business English. Offline in Kolkata, online across India.","address":{"@type":"PostalAddress","streetAddress":"75/2/4, Raja Ram Mohan Roy Road","addressLocality":"Kolkata","postalCode":"700008","addressCountry":"IN"},"telephone":"+91 8981672404","areaServed":"IN","sameAs":["tel:+918981672404","mailto:learnwithsmile@proton.me"]}
+  </script>
+
+  <script>
+    // Reveal on scroll
+    const ro = new IntersectionObserver((entries)=>{ for (const e of entries){ if(e.isIntersecting){ e.target.classList.add('show'); ro.unobserve(e.target);} } }, {rootMargin:'-10% 0px'});
+    document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav a').forEach(a=>{ a.addEventListener('click', ()=>document.querySelector('.nav')?.classList.remove('open')); });
+
+    // WhatsApp form handler
+    const DEST_WA_NUMBER = "918981672404"; // +91 8981672404
+    const form = document.getElementById('contactForm');
+    const note = document.getElementById('formNote');
+    function buildWhatsAppURL({name,email,tel,message}){
+      const lines = [
+        "Hello Learn With Smile 👋",
+        "",
+        `Name: ${name}`,
+        `Email: ${email}`,
+        tel ? `Phone: ${tel}` : null,
+        "",
+        "I'd like help with:",
+        message
+      ].filter(Boolean);
+      const text = encodeURIComponent(lines.join("\n"));
+      return `https://api.whatsapp.com/send?phone=${DEST_WA_NUMBER}&text=${text}`;
+    }
+    if(form){
+      form.addEventListener('submit', function(ev){
+        ev.preventDefault();
+        if(!form.checkValidity()){
+          note.textContent = 'Please fill in the required fields.';
+          note.style.color = '#b91c1c';
+          return;
+        }
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const tel = document.getElementById('tel').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const url = buildWhatsAppURL({name,email,tel,message});
+        window.open(url, '_blank');
+        note.textContent = 'Opening WhatsApp… If nothing happens, please ensure WhatsApp (app or web) is available on your device.';
+        note.style.color = '#065f46';
+      });
+    }
+  </script>
+  <script>
+    // Smooth, reliable Back-to-Top (works even if anchor offsets act weird)
+    (function(){
+      const links = document.querySelectorAll('a[href="#top"]');
+      if(!links.length) return;
+      function toTop(e){
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Close any open mobile menu
+        document.querySelector('.nav')?.classList.remove('open');
+        // Move focus to top for accessibility
+        const topEl = document.getElementById('top') || document.body;
+        if(topEl){
+          topEl.setAttribute('tabindex','-1');
+          topEl.focus({ preventScroll: true });
+          setTimeout(()=> topEl.removeAttribute('tabindex'), 400);
+        }
+      }
+      links.forEach(a=> a.addEventListener('click', toTop));
+    })();
+  </script>
+</body>
+</html>
